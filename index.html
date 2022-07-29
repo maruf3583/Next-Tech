@@ -274,7 +274,6 @@
             </div>
         </section> <!-- Explore Institute End -->
 
-
         <section id="join" class="py-4 py-md-5">
             <div class="container px-3">
                 <div class="row g-0 bg-primary c-p-100 rounded-2">
@@ -285,7 +284,43 @@
                     </div>
                     <div
                         class="col-12 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-end">
-                        <a href="#" class="btn btn-light text-primary fw-bold mt-3 py-2 px-4">Join Now</a>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-light text-primary fw-bold mt-3 py-2 px-4"
+                            data-bs-toggle="modal" data-bs-target="#registerModal">
+                            Register Now
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="registerModalLabel">Register Here</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body p-4">
+                                        <form action="" name="register">
+                                            <div class="mb-3">
+                                                <label for="emailAddress" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" id="emailAddress"
+                                                    aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text">We'll never share your email with
+                                                    anyone else.</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="password" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="password">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Register</button>
+                                            <button type="reset" class="btn btn-primary">reset</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
